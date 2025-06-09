@@ -73,5 +73,5 @@ end
 group :development do
   gem 'guard'
   gem 'guard-minitest'  # or 'guard-rspec' if you're using RSpec
-  gem 'listen', '~> 3.0.5'  # Helps Guard detect file changes
+  gem 'listen', '~> 3.9.0'  # Helps Guard detect file changes
 end
