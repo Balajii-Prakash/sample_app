@@ -16,20 +16,11 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+gem 'faker'
+gem 'will_paginate'
 
 # Gemfile
 gem 'bcrypt', '~> 3.1.7'
-
-gem 'bootstrap-sass', '~> 3.4.1'
-
-
-
-
-
-
-# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
@@ -70,11 +61,15 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem 'pry'
+  gem 'pry-rails'
 end
 
 # Gemfile (inside the development group)
 group :development do
   gem 'guard'
   gem 'guard-minitest'  # or 'guard-rspec' if you're using RSpec
-  gem 'listen', '~> 3.0.5'  # Helps Guard detect file changes
+  gem 'listen', '~> 3.0.5'  # Helps Guard detect file
+  gem 'pry'
+  gem 'pry-rails'
 end
