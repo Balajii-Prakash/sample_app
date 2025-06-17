@@ -1,0 +1,4 @@
+<h1>Micropost</h1>
+<p><%= @micropost.content %></p>
+<p>Posted by: <%= @micropost.user.name %></p>
+<%= link_to 'Back', request.referrer || root_path %>

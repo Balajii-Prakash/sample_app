@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   # Virtual attributes for tokens
+  has_many :microposts , dependent: :destroy
   attr_accessor :session_token
   attr_accessor :remember_token
 
@@ -8,6 +9,7 @@ class User < ApplicationRecord
 
   # Name validations
   validates :name, presence: true, length: { maximum: 50 }
+  validates :phone_number, presence: true, length: {minimum: 10}
 
   # Email validations
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -30,6 +32,9 @@ class User < ApplicationRecord
   # Class method to generate a new random token
   def self.new_token
     SecureRandom.urlsafe_base64
+  end
+  def feed
+    Micropost.where(user_id: id)
   end
 
   # Remember user by storing token digest in DB
