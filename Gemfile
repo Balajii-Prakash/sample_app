@@ -20,7 +20,7 @@ gem 'faker'
 gem 'will_paginate'
 gem 'active_storage_validations', '0.8.2'
 gem 'image_processing', '1.9.3'
-gem 'mini_magick', '4.9.5'
+gem 'mini_magick', '4.13.2'
 # Gemfile
 gem 'bcrypt', '~> 3.1.7'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
