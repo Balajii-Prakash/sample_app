@@ -19,7 +19,7 @@ gem "jbuilder"
 gem 'faker'
 gem 'will_paginate'
 gem 'active_storage_validations', '0.8.2'
-gem 'image_processing', '1.9.3'
+gem 'image_processing', '1.14.0'
 gem 'mini_magick', '4.9.5'
 # Gemfile
 gem 'bcrypt', '~> 3.1.7'
